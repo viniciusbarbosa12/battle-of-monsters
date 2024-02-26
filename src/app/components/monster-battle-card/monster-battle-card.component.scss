@@ -1,0 +1,47 @@
+@import "../../../styles/variables";
+
+.mat-card-image {
+    width: 100%;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    border-radius: 7px !important;
+    margin-bottom: 14px;
+}
+.mat-card-monster-name {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.mat-card-hr {
+    background-color: #0000001A;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 11px;
+}
+.mat-card-stat-title {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.mat-card-image:first-child {
+    margin-top: 0;
+}
+.battle-card-player {
+    padding: 13px 11px;
+    height: 415px;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: $box-shadow;
+}
+.centralized {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}

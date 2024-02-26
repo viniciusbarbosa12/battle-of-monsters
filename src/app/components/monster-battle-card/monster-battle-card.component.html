@@ -1,0 +1,14 @@
+<div>
+    <mat-card class="battle-card-player centralized">
+        <p class="title" *ngIf="!monster">{{ title }}</p>
+        <div class="monster-card-container" *ngIf="monster">
+            <img mat-card-image [src]="monster.imageUrl" [alt]="title" />
+            <p class="mat-card-monster-name">{{ monster.name }}</p>
+            <div class="mat-card-hr"></div>
+            <app-monster-card-stat label="HP" [stat]="monster.hp"></app-monster-card-stat>
+            <app-monster-card-stat label="Attack" [stat]="monster.attack"></app-monster-card-stat>
+            <app-monster-card-stat label="Defense" [stat]="monster.defense"></app-monster-card-stat>
+            <app-monster-card-stat label="Speed" [stat]="monster.speed"></app-monster-card-stat>
+        </div>
+    </mat-card>
+</div>

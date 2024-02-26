@@ -1,0 +1,11 @@
+<div>
+    <span class="title-select-monster">
+        {{
+        monsters.length > 0 ? "Select your monster" : "No monsters available"
+        }}
+    </span>
+    <div class="list-monsters">
+        <app-monster-card *ngFor="let monster of monsters" [monster]="monster"
+            [isSelected]="monster.id === selectedMonsterId" (selected)="monsterSelected($event)"></app-monster-card>
+    </div>
+</div>
